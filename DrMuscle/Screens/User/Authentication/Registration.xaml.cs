@@ -1,5 +1,4 @@
-﻿using DrMuscle.Screens.User.Authentication;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,16 +7,14 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace DrMuscle.Screens.User.OnBoarding
+namespace DrMuscle.Screens.User.Authentication
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class MainOnboardingPage : CarouselPage
+	public partial class Registration : ContentPage
 	{
-		public MainOnboardingPage ()
+		public Registration ()
 		{
 			InitializeComponent ();
-
-			Children.Add(new Registration());
 		}
 	}
 }

@@ -1,0 +1,645 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DrMuscle.Screens.User.Authentication.Registration"
+            xmlns:tool="http://xamarin.com/schemas/2020/toolkit"
+             >
+
+    <AbsoluteLayout>
+
+        <ScrollView
+            VerticalScrollBarVisibility="Never"
+            AbsoluteLayout.LayoutBounds="0,0,1,1" 
+            AbsoluteLayout.LayoutFlags="All"
+            >
+
+            <StackLayout>
+                <StackLayout
+                    HorizontalOptions="CenterAndExpand"
+                    Margin="0, 15, 0, 0"
+                    >
+
+                    <StackLayout
+                        Margin="0, 30, 0, 0"
+                        >
+
+                        <Image
+                            WidthRequest="80"
+                            HeightRequest="80"
+                            Source="logo1.png"/>
+
+                    </StackLayout>
+
+
+                </StackLayout>
+
+                <StackLayout
+                        Margin="30, 30, 30, 0"
+                        >
+                    <Label
+                        Text="Create your account for better experience"
+                        FontFamily="PoppinsMedium"
+                        FontSize="16"
+                        TextColor="#000"
+                        VerticalOptions="Center"
+                        >
+
+                    </Label>
+
+                </StackLayout>
+
+
+
+                <StackLayout
+                        Margin="30, 10, 30, 10"
+                        >
+                    <Label
+                            Margin="0, 0, 0, 3"
+                            FontFamily="PoppinsRegular"
+                            FontSize="14"
+                            TextColor="#A7ABB9">
+                        Enter Full Name
+                    </Label>
+
+                    <Frame 
+                            HeightRequest="50"
+                            Padding="0"
+                            VerticalOptions="Center"
+                            HorizontalOptions="FillAndExpand"
+                            CornerRadius="15"
+                            BackgroundColor="#fff"
+                            BorderColor="#94E3EA"
+                            >
+
+                        <Grid 
+                                HeightRequest="50"
+                                VerticalOptions="Center"
+                                >
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="45"/>
+                                <ColumnDefinition Width="2"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Image
+                                    WidthRequest="20" 
+                                    HeightRequest="20" 
+                                    VerticalOptions="Center"
+                                    HorizontalOptions="Center"
+                                    Grid.Row="0"
+                                    Grid.Column="0"
+                                    Source="user_1.png"/>
+
+                            <Image
+                                    WidthRequest="2" 
+                                    HeightRequest="30" 
+                                    VerticalOptions="Center"
+                                    HorizontalOptions="Center"
+                                    Grid.Row="0"
+                                    Grid.Column="1"
+                                    Source="vertical_line.png"/>
+
+                            <Entry
+                                x:Name="txt_full_name"
+                                FontFamily="PoppinsMedium"
+                                FontSize="14"
+                                VerticalOptions="CenterAndExpand"
+                                Placeholder="Enter Full Named"
+                                PlaceholderColor="#969696"
+                                BackgroundColor="Transparent"
+                                Background="Transparent"
+                                Margin="0,0,10,0"
+                                Grid.Row="0"
+                                Grid.Column="2"
+                                >
+                                
+                                <Entry.Effects>
+                                    <tool:RemoveBorderEffect />
+                                </Entry.Effects>
+                                
+                            </Entry>
+
+                        </Grid>
+
+                    </Frame>
+                </StackLayout>
+
+                <StackLayout
+                    Margin="30, 10, 30, 10"
+                        >
+                    <Label
+                            Margin="0, 0, 0, 3"
+                            FontFamily="PoppinsRegular"
+                            FontSize="14"
+                            TextColor="#A7ABB9">
+                        Gender
+                    </Label>
+
+                    <Frame 
+                        HeightRequest="50"
+                        Margin="0, 0, 0, 0"
+                        Padding="0"
+                        VerticalOptions="Center"
+                        HorizontalOptions="FillAndExpand"
+                        CornerRadius="15"
+                        BackgroundColor="#fff"
+                        BorderColor="#94E3EA"
+                        >
+
+                        <StackLayout
+                                >
+
+                            <Grid 
+                                HeightRequest="50"
+                                VerticalOptions="Center"
+                                >
+
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="45"/>
+                                    <ColumnDefinition Width="2"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="30"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Image
+                                    WidthRequest="20" 
+                                    HeightRequest="20" 
+                                    VerticalOptions="Center"
+                                    HorizontalOptions="Center"
+                                    Grid.Row="0"
+                                    Grid.Column="0"
+                                    Source="user_1.png"/>
+
+                                <Image
+                                    WidthRequest="1" 
+                                    HeightRequest="30" 
+                                    VerticalOptions="Center"
+                                    HorizontalOptions="Center"
+                                    Grid.Row="0"
+                                    Grid.Column="1"
+                                    Source="vertical_line.png"/>
+
+                                <Picker
+                                    Grid.Row="0"
+                                    Grid.Column="2"
+                                    x:Name="pk_gender" 
+                                    BackgroundColor="#fff"
+                                    VerticalOptions="CenterAndExpand"
+                                    Margin="10,0,0,0"
+                                    >
+
+                                    <Picker.Effects>
+                                        <tool:RemoveBorderEffect />
+                                    </Picker.Effects>
+
+                                </Picker>
+
+                                <Image 
+                                    Grid.Row="0"
+                                    Grid.Column="3"
+                                    WidthRequest="15" 
+                                    HeightRequest="15" 
+                                    Source="down_arrow.png"
+                                    HorizontalOptions="Start"
+                                    />
+
+                            </Grid>
+
+
+                        </StackLayout>
+
+                    </Frame>
+
+                </StackLayout>
+
+                <StackLayout
+                        Margin="30, 10, 30, 10"
+                        >
+                    <Label
+                            Margin="0, 0, 0, 3"
+                            FontFamily="PoppinsRegular"
+                            FontSize="14"
+                            TextColor="#A7ABB9">
+                        Email
+                    </Label>
+
+                    <Frame 
+                            HeightRequest="50"
+                            Padding="0"
+                            VerticalOptions="Center"
+                            HorizontalOptions="FillAndExpand"
+                            CornerRadius="15"
+                            BackgroundColor="#fff"
+                            BorderColor="#94E3EA"
+                            >
+
+                        <Grid 
+                                HeightRequest="50"
+                                VerticalOptions="Center"
+                                >
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="45"/>
+                                <ColumnDefinition Width="2"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Image
+                                WidthRequest="20" 
+                                HeightRequest="20" 
+                                VerticalOptions="Center"
+                                HorizontalOptions="Center"
+                                Grid.Row="0"
+                                Grid.Column="0"
+                                Source="mail.png"/>
+
+                            <Image
+                                WidthRequest="2" 
+                                HeightRequest="30" 
+                                VerticalOptions="Center"
+                                HorizontalOptions="Center"
+                                Grid.Row="0"
+                                Grid.Column="1"
+                                Source="vertical_line.png"/>
+
+                            <Entry
+                                x:Name="txt_email"
+                                FontFamily="PoppinsMedium"
+                                FontSize="14"
+                                VerticalOptions="CenterAndExpand"
+                                Placeholder="Email"
+                                PlaceholderColor="#969696"
+                                BackgroundColor="Transparent"
+                                Background="Transparent"
+                                Margin="5,0,0,0"
+                                Grid.Row="0"
+                                Grid.Column="2"
+                                >
+                                <Entry.Effects>
+                                    <tool:RemoveBorderEffect />
+                                </Entry.Effects>
+                            </Entry>
+                            <Label
+                                x:Name="lb_email_status"
+                                />
+
+                        </Grid>
+
+                    </Frame>
+                </StackLayout>
+
+
+                <StackLayout
+                        Margin="30, 10, 30, 10"
+                        IsVisible="true"
+                        >
+                    <Label
+                            Margin="0, 0, 0, 3"
+                            FontFamily="PoppinsRegular"
+                            FontSize="14"
+                            TextColor="#A7ABB9">
+                        Phone Number
+                    </Label>
+
+                    <Frame 
+                            HeightRequest="50"
+                            Padding="0"
+                            VerticalOptions="Center"
+                            HorizontalOptions="FillAndExpand"
+                            CornerRadius="15"
+                            BackgroundColor="#fff"
+                            BorderColor="#94E3EA"
+                            >
+
+                        <Grid 
+                                HeightRequest="50"
+                                VerticalOptions="Center"
+                                >
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="45"/>
+                                <ColumnDefinition Width="2"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Image
+                                    WidthRequest="20" 
+                                    HeightRequest="20" 
+                                    VerticalOptions="Center"
+                                    HorizontalOptions="Center"
+                                    Grid.Row="0"
+                                    Grid.Column="0"
+                                    Source="phone.png"/>
+
+                            <Image
+                                    WidthRequest="2" 
+                                    HeightRequest="30" 
+                                    VerticalOptions="Center"
+                                    HorizontalOptions="Center"
+                                    Grid.Row="0"
+                                    Grid.Column="1"
+                                    Source="vertical_line.png"/>
+
+                            <Entry
+                                x:Name="txt_phone_number"
+                                FontFamily="PoppinsMedium"
+                                FontSize="14"
+                                VerticalOptions="CenterAndExpand"
+                                Placeholder="Phone Number"
+                                PlaceholderColor="#969696"
+                                BackgroundColor="Transparent"
+                                Background="Transparent"
+                                Margin="5,0,0,0"
+                                Grid.Row="0"
+                                Grid.Column="2"
+                                Keyboard="Telephone"
+                                ReturnType="Next"
+                                >
+                                <Entry.Effects>
+                                    <tool:RemoveBorderEffect />
+                                </Entry.Effects>
+                            </Entry>
+
+                        </Grid>
+
+                    </Frame>
+                </StackLayout>
+
+                <StackLayout
+                        Margin="30, 10, 30, 10"
+                        >
+                    <Label
+                            Margin="0, 0, 0, 3"
+                            FontFamily="PoppinsRegular"
+                            FontSize="14"
+                            TextColor="#A7ABB9">
+                        Password
+                    </Label>
+
+                    <Frame 
+                            HeightRequest="50"
+                            Padding="0"
+                            VerticalOptions="Center"
+                            HorizontalOptions="FillAndExpand"
+                            CornerRadius="15"
+                            BackgroundColor="#fff"
+                            BorderColor="#94E3EA"
+                            >
+
+                        <Grid 
+                                HeightRequest="50"
+                                VerticalOptions="Center"
+                                >
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="45"/>
+                                <ColumnDefinition Width="2"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="30"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Image
+                                    WidthRequest="20" 
+                                    HeightRequest="20" 
+                                    VerticalOptions="Center"
+                                    HorizontalOptions="Center"
+                                    Grid.Row="0"
+                                    Grid.Column="0"
+                                    Source="lock.png"/>
+
+                            <Image
+                                    WidthRequest="2" 
+                                    HeightRequest="30" 
+                                    VerticalOptions="Center"
+                                    HorizontalOptions="Center"
+                                    Grid.Row="0"
+                                    Grid.Column="1"
+                                    Source="vertical_line.png"/>
+
+                            <Entry
+                                x:Name="txt_password"
+                                FontFamily="PoppinsMedium"
+                                FontSize="14"
+                                VerticalOptions="CenterAndExpand"
+                                Placeholder="Password"
+                                PlaceholderColor="#969696"
+                                BackgroundColor="Transparent"
+                                Background="Transparent"
+                                IsPassword="True"
+                                 Margin="5,0,0,0"
+                                MaxLength="6"
+                                Grid.Row="0"
+                                Grid.Column="2"
+                                >
+                                <Entry.Effects>
+                                    <tool:RemoveBorderEffect />
+                                </Entry.Effects>
+                            </Entry>
+
+                            <Image 
+                                WidthRequest="20" 
+                                HeightRequest="20" 
+                                Grid.Row="0"
+                                Grid.Column="3"
+                                Margin="0,0,10,0"
+                                BackgroundColor="Transparent"
+                                Source="eye_close.png">
+
+                                <Image.GestureRecognizers>
+
+                                    <TapGestureRecognizer
+                                        x:Name="img_password"
+                                        CommandParameter="p"
+                                        />
+
+                                </Image.GestureRecognizers>
+                            </Image>
+                        </Grid>
+
+                    </Frame>
+                </StackLayout>
+
+                <StackLayout
+                        Margin="30, 10, 30, 10"
+                        >
+                    <Label
+                            Margin="0, 0, 0, 3"
+                            FontFamily="PoppinsRegular"
+                            FontSize="14"
+                            TextColor="#A7ABB9">
+                        Confirm Password
+                    </Label>
+
+                    <Frame 
+                        HeightRequest="50"
+                        Padding="0"
+                        VerticalOptions="Center"
+                        HorizontalOptions="FillAndExpand"
+                        CornerRadius="15"
+                        BackgroundColor="#fff"
+                        BorderColor="#94E3EA"
+                        >
+
+                        <Grid 
+                                HeightRequest="50"
+                                VerticalOptions="Center"
+                                >
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="45"/>
+                                <ColumnDefinition Width="2"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="30"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Image
+                                    WidthRequest="20" 
+                                    HeightRequest="20" 
+                                    VerticalOptions="Center"
+                                    HorizontalOptions="Center"
+                                    Grid.Row="0"
+                                    Grid.Column="0"
+                                    Source="lock.png"/>
+
+                            <Image
+                                    WidthRequest="2" 
+                                    HeightRequest="30" 
+                                    VerticalOptions="Center"
+                                    HorizontalOptions="Center"
+                                    Grid.Row="0"
+                                    Grid.Column="1"
+                                    Source="vertical_line.png"/>
+
+                            <Entry
+                                x:Name="txt_confirm_password"
+                                FontFamily="PoppinsMedium"
+                                FontSize="14"
+                                VerticalOptions="CenterAndExpand"
+                                Placeholder="Confirm Password"
+                                PlaceholderColor="#969696"
+                                BackgroundColor="Transparent"
+                                Background="Transparent"
+                                IsPassword="True"
+                                MaxLength="6"
+                                Margin="5,0,0,0"
+                                Grid.Row="0"
+                                Grid.Column="2"
+                                >
+                                <Entry.Effects>
+                                    <tool:RemoveBorderEffect />
+                                </Entry.Effects>
+                            </Entry>
+
+                            <Image 
+                                    WidthRequest="20" 
+                                    HeightRequest="20" 
+                                    Grid.Row="0"
+                                    Grid.Column="3"
+                                    Margin="0,0,10,0"
+                                    BackgroundColor="Transparent"
+                                    Source="eye_close.png">
+
+                                <Image.GestureRecognizers>
+
+                                    <TapGestureRecognizer
+                                        CommandParameter="cp"
+                                        />
+
+                                </Image.GestureRecognizers>
+                            </Image>
+                        </Grid>
+
+                    </Frame>
+                </StackLayout>
+
+
+                <StackLayout
+                        Margin="30, 10, 30, 10"
+                        >
+                    <Button 
+                        x:Name="sign_up"
+                            HeightRequest="50"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="Center"
+                            CornerRadius="14"
+                            Text="Sign Up"
+                            FontFamily="PoppinsMedium"
+                            FontSize="16"
+                    
+                            />
+                </StackLayout>
+
+                <StackLayout
+                    Orientation="Horizontal"
+                        Margin="30, 10, 30, 0"
+                    HorizontalOptions="Center"
+                        >
+                    <Label
+                        Text="Have an account?"
+                            Margin="0, 0, 0, 3"
+                            FontFamily="PoppinsMedium"
+                            FontSize="10"
+                            TextColor="#A7ABB9">
+
+                    </Label>
+
+                    <Label
+                        Text=" Sign in"
+                            Margin="0, 0, 0, 3"
+                            FontFamily="PoppinsMedium"
+                            FontSize="10"
+                            TextColor="#1877F2">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer
+                                x:Name="sign_in"
+                                />
+                        </Label.GestureRecognizers>
+                    </Label>
+                </StackLayout>
+
+                <BoxView HeightRequest="25" Color="#fff"/>
+            </StackLayout>
+        </ScrollView>
+
+        <ContentView x:Name="pop" Padding="10, 0"
+                         IsVisible="false" 
+                         AbsoluteLayout.LayoutBounds="0,0,1,1" 
+                         AbsoluteLayout.LayoutFlags="All"
+                         >
+
+            <StackLayout 
+                VerticalOptions="Center"
+                HorizontalOptions="Center">
+
+
+            </StackLayout>
+        </ContentView>
+
+    </AbsoluteLayout>
+
+</ContentPage>
