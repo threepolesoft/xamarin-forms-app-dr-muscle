@@ -19,6 +19,7 @@
                     Margin="0, 0, 0, 0"
                     >
 
+
                     <Image
                         Source="page"
                         VerticalOptions="FillAndExpand"
@@ -27,34 +28,6 @@
 
                 </StackLayout>
 
-            </ContentView>
-
-            <ContentView 
-                Padding="10, 0" 
-                IsVisible="false" 
-                AbsoluteLayout.LayoutBounds="0,0,1,1" 
-                AbsoluteLayout.LayoutFlags="All">
-
-                <StackLayout 
-                    VerticalOptions="Center" 
-                    HorizontalOptions="Center">
-
-                    <StackLayout 
-                        Orientation="Vertical" 
-                        HeightRequest="150" WidthRequest="200">
-
-                        <ActivityIndicator 
-                            x:Name="AI" 
-                            Margin="0, 50, 0, 0" 
-                            VerticalOptions="Center" 
-                            HorizontalOptions="Center" 
-                            IsRunning="True"
-                            WidthRequest="30"
-                            HeightRequest="30"
-                            />
-
-                    </StackLayout>
-                </StackLayout>
             </ContentView>
 
             <ContentView 
@@ -69,16 +42,9 @@
                     Margin="20, 0, 20, 50"
                     >
 
-                    <StackLayout
+                    <StackLayout>
                         
-                        >
-
-                        <BoxView
-                            BackgroundColor="#60B5F9"
-                            WidthRequest="20"
-                            HeightRequest="20"
-                            />
-
+                        
                     </StackLayout>
 
                     <Button
@@ -105,6 +71,28 @@
                         />
 
                 </StackLayout>
+            </ContentView>
+
+            <ContentView 
+                Padding="0" 
+                AbsoluteLayout.LayoutFlags="YProportional"
+                >
+
+                <StackLayout 
+                    Margin="0, 0, 0, 0"
+                    Orientation="Horizontal"
+                    >
+                    <Frame 
+                        Padding="0"
+                        HeightRequest="10"
+                        WidthRequest="20"
+                        BackgroundColor="#60B5F9"
+                        CornerRadius="10"
+                        />
+
+                    
+                </StackLayout>
+
             </ContentView>
 
         </AbsoluteLayout>

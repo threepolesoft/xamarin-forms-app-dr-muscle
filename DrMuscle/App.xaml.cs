@@ -19,7 +19,7 @@ namespace DrMuscle
             InitializeComponent();
 
             DependencyService.Register<MockDataStore>();
-            MainPage = new Registration();
+            MainPage = new MainOnboardingPage();
 
         }
 

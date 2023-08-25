@@ -7,6 +7,25 @@
 
     <AbsoluteLayout>
 
+        <ContentView 
+                Padding="0, 0" 
+                AbsoluteLayout.LayoutBounds="0,0,1,1" 
+                AbsoluteLayout.LayoutFlags="All">
+
+            <StackLayout 
+                    Margin="0, 0, 0, 0"
+                    >
+
+                <Image
+                        Source="page"
+                        VerticalOptions="FillAndExpand"
+                        Aspect="AspectFill"
+                        />
+
+            </StackLayout>
+
+        </ContentView>
+
         <ScrollView
             VerticalScrollBarVisibility="Never"
             AbsoluteLayout.LayoutBounds="0,0,1,1" 
@@ -24,8 +43,9 @@
                         >
 
                         <Image
-                            WidthRequest="80"
-                            HeightRequest="80"
+                            WidthRequest="140"
+                            HeightRequest="140"
+                            Aspect="AspectFill"
                             Source="logo1.png"/>
 
                     </StackLayout>
@@ -40,7 +60,7 @@
                         Text="Create your account for better experience"
                         FontFamily="PoppinsMedium"
                         FontSize="16"
-                        TextColor="#000"
+                        TextColor="#A7ABB9"
                         VerticalOptions="Center"
                         >
 
@@ -68,7 +88,7 @@
                             HorizontalOptions="FillAndExpand"
                             CornerRadius="15"
                             BackgroundColor="#fff"
-                            BorderColor="#94E3EA"
+                            BorderColor="#60B5F9"
                             >
 
                         <Grid 
@@ -109,7 +129,7 @@
                                 FontFamily="PoppinsMedium"
                                 FontSize="14"
                                 VerticalOptions="CenterAndExpand"
-                                Placeholder="Enter Full Named"
+                                Placeholder="Enter Full Name"
                                 PlaceholderColor="#969696"
                                 BackgroundColor="Transparent"
                                 Background="Transparent"
@@ -148,7 +168,7 @@
                         HorizontalOptions="FillAndExpand"
                         CornerRadius="15"
                         BackgroundColor="#fff"
-                        BorderColor="#94E3EA"
+                        BorderColor="#60B5F9"
                         >
 
                         <StackLayout
@@ -194,8 +214,16 @@
                                     x:Name="pk_gender" 
                                     BackgroundColor="#fff"
                                     VerticalOptions="CenterAndExpand"
-                                    Margin="10,0,0,0"
+                                    Margin="0,0,10,0"
+                                    SelectedIndex="0"
                                     >
+
+                                    <Picker.ItemsSource>
+                                        <x:Array Type="{x:Type x:String}">
+                                            <x:String>Male</x:String>
+                                            <x:String>Famale</x:String>
+                                        </x:Array>
+                                    </Picker.ItemsSource>
 
                                     <Picker.Effects>
                                         <tool:RemoveBorderEffect />
@@ -239,7 +267,7 @@
                             HorizontalOptions="FillAndExpand"
                             CornerRadius="15"
                             BackgroundColor="#fff"
-                            BorderColor="#94E3EA"
+                            BorderColor="#60B5F9"
                             >
 
                         <Grid 
@@ -284,9 +312,11 @@
                                 PlaceholderColor="#969696"
                                 BackgroundColor="Transparent"
                                 Background="Transparent"
-                                Margin="5,0,0,0"
+                                Margin="0,0,10,0"
                                 Grid.Row="0"
                                 Grid.Column="2"
+                                Keyboard="Email"
+                                ReturnType="Next"
                                 >
                                 <Entry.Effects>
                                     <tool:RemoveBorderEffect />
@@ -321,7 +351,7 @@
                             HorizontalOptions="FillAndExpand"
                             CornerRadius="15"
                             BackgroundColor="#fff"
-                            BorderColor="#94E3EA"
+                            BorderColor="#60B5F9"
                             >
 
                         <Grid 
@@ -366,7 +396,7 @@
                                 PlaceholderColor="#969696"
                                 BackgroundColor="Transparent"
                                 Background="Transparent"
-                                Margin="5,0,0,0"
+                                Margin="0,0,10,0"
                                 Grid.Row="0"
                                 Grid.Column="2"
                                 Keyboard="Telephone"
@@ -400,7 +430,7 @@
                             HorizontalOptions="FillAndExpand"
                             CornerRadius="15"
                             BackgroundColor="#fff"
-                            BorderColor="#94E3EA"
+                            BorderColor="#60B5F9"
                             >
 
                         <Grid 
@@ -447,10 +477,11 @@
                                 BackgroundColor="Transparent"
                                 Background="Transparent"
                                 IsPassword="True"
-                                 Margin="5,0,0,0"
+                                Margin="0,0,10,0"
                                 MaxLength="6"
                                 Grid.Row="0"
                                 Grid.Column="2"
+                                ReturnType="Next"
                                 >
                                 <Entry.Effects>
                                     <tool:RemoveBorderEffect />
@@ -498,7 +529,7 @@
                         HorizontalOptions="FillAndExpand"
                         CornerRadius="15"
                         BackgroundColor="#fff"
-                        BorderColor="#94E3EA"
+                        BorderColor="#60B5F9"
                         >
 
                         <Grid 
@@ -546,7 +577,7 @@
                                 Background="Transparent"
                                 IsPassword="True"
                                 MaxLength="6"
-                                Margin="5,0,0,0"
+                                Margin="0,0,10,0"
                                 Grid.Row="0"
                                 Grid.Column="2"
                                 >
@@ -590,20 +621,20 @@
                             Text="Sign Up"
                             FontFamily="PoppinsMedium"
                             FontSize="16"
-                    
+                            BackgroundColor="#60B5F9"
                             />
                 </StackLayout>
 
                 <StackLayout
                     Orientation="Horizontal"
-                        Margin="30, 10, 30, 0"
+                        Margin="30, 10, 30, 10"
                     HorizontalOptions="Center"
                         >
                     <Label
                         Text="Have an account?"
                             Margin="0, 0, 0, 3"
                             FontFamily="PoppinsMedium"
-                            FontSize="10"
+                            FontSize="15"
                             TextColor="#A7ABB9">
 
                     </Label>
@@ -612,8 +643,8 @@
                         Text=" Sign in"
                             Margin="0, 0, 0, 3"
                             FontFamily="PoppinsMedium"
-                            FontSize="10"
-                            TextColor="#1877F2">
+                            FontSize="15"
+                            TextColor="#60B5F9">
                         <Label.GestureRecognizers>
                             <TapGestureRecognizer
                                 x:Name="sign_in"
@@ -622,7 +653,6 @@
                     </Label>
                 </StackLayout>
 
-                <BoxView HeightRequest="25" Color="#fff"/>
             </StackLayout>
         </ScrollView>
 
