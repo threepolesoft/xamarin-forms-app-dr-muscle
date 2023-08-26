@@ -15,6 +15,9 @@ namespace DrMuscle.Screens.User.Authentication
 		public Registration ()
 		{
 			InitializeComponent ();
-		}
+
+			pk_gender.SelectedIndex = 0;
+
+        }
 	}
 }

@@ -26,6 +26,7 @@
 
         </ContentView>
 
+
         <ScrollView
             VerticalScrollBarVisibility="Never"
             AbsoluteLayout.LayoutBounds="0,0,1,1" 
@@ -33,6 +34,39 @@
             >
 
             <StackLayout>
+
+                <StackLayout
+                        Orientation="Vertical"
+                        HorizontalOptions="CenterAndExpand"
+                        >
+
+                    <StackLayout 
+                            Margin="0, 20, 0, 0"
+                            Orientation="Horizontal"
+                            HorizontalOptions="FillAndExpand"
+                            >
+
+                        <Frame 
+                                Padding="0"
+                                HeightRequest="10"
+                                WidthRequest="10"
+                                BackgroundColor="#60B5F9"
+                                CornerRadius="10"
+                                />
+
+                        <Frame 
+                                Padding="0"
+                                HeightRequest="10"
+                                WidthRequest="10"
+                                BackgroundColor="#f2f2f2"
+                                CornerRadius="10"
+                                />
+
+
+                    </StackLayout>
+
+                </StackLayout>
+
                 <StackLayout
                     HorizontalOptions="CenterAndExpand"
                     Margin="0, 15, 0, 0"
@@ -216,10 +250,12 @@
                                     VerticalOptions="CenterAndExpand"
                                     Margin="0,0,10,0"
                                     SelectedIndex="0"
+                                    SelectedItem="Male"
                                     >
 
                                     <Picker.ItemsSource>
                                         <x:Array Type="{x:Type x:String}">
+                                            <x:String>Select</x:String>
                                             <x:String>Male</x:String>
                                             <x:String>Famale</x:String>
                                         </x:Array>

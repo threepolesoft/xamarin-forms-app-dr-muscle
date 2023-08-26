@@ -31,6 +31,119 @@
             </ContentView>
 
             <ContentView 
+                Padding="0" 
+                AbsoluteLayout.LayoutBounds="0,0,1,10" 
+                AbsoluteLayout.LayoutFlags="All"
+                >
+
+                <StackLayout>
+                    
+                    <StackLayout
+                        Orientation="Vertical"
+                        HorizontalOptions="CenterAndExpand"
+                        >
+
+                        <StackLayout 
+                            Margin="0, 20, 0, 0"
+                            Orientation="Horizontal"
+                            HorizontalOptions="FillAndExpand"
+                            >
+
+                            <Frame 
+                                Padding="0"
+                                HeightRequest="10"
+                                WidthRequest="10"
+                                BackgroundColor="#60B5F9"
+                                CornerRadius="10"
+                                />
+
+                            <Frame 
+                                Padding="0"
+                                HeightRequest="10"
+                                WidthRequest="10"
+                                BackgroundColor="#f2f2f2"
+                                CornerRadius="10"
+                                />
+
+
+                        </StackLayout>
+
+                    </StackLayout>
+
+                    <StackLayout
+                    HorizontalOptions="CenterAndExpand"
+                    Margin="0, 15, 0, 0"
+                    >
+
+                        <StackLayout
+                        Margin="0, 30, 0, 0"
+                        >
+
+                            <Image
+                            WidthRequest="140"
+                            HeightRequest="140"
+                            Aspect="AspectFill"
+                            Source="logo1.png"/>
+
+                        </StackLayout>
+
+
+                    </StackLayout>
+
+                    <StackLayout
+                        Orientation="Vertical"
+                         HorizontalOptions="CenterAndExpand"
+                        >
+
+                        <Label 
+                            Text="Join free"
+                            TextColor="Wheat"
+                            FontSize="24"
+                            Margin="30,30,0,0"
+                            />
+                    
+                        <Label 
+                            Text="Save your workouts,
+                            progress, and stats"
+                            TextColor="Wheat"
+                            FontSize="24"
+                            Margin="30,15,0,0"
+                            />
+
+                        <Label 
+                            Text="Join free with Google"
+                            TextColor="Wheat"
+                            FontSize="18"
+                            Margin="30,10,0,0"
+                            />
+
+                        <Label 
+                            Text="Join free with Facebook"
+                            TextColor="Wheat"
+                            FontSize="18"
+                            Margin="30,0,0,0"
+                            />
+
+                        <Label 
+                            Text="Join free with Email"
+                            TextColor="Wheat"
+                            FontSize="18"
+                            Margin="30,0,0,0"
+                            />
+                        
+                        <Label 
+                            Text="Join free with Apple"
+                            TextColor="Wheat"
+                            FontSize="18"
+                            Margin="30,0,0,0"
+                            />
+
+                    </StackLayout>
+                    
+                </StackLayout>
+            </ContentView>
+
+            <ContentView 
                 Padding="0, 0" 
                 AbsoluteLayout.LayoutBounds="0,0,1,1" 
                 AbsoluteLayout.LayoutFlags="All">
@@ -43,8 +156,8 @@
                     >
 
                     <StackLayout>
-                        
-                        
+
+
                     </StackLayout>
 
                     <Button
@@ -71,28 +184,6 @@
                         />
 
                 </StackLayout>
-            </ContentView>
-
-            <ContentView 
-                Padding="0" 
-                AbsoluteLayout.LayoutFlags="YProportional"
-                >
-
-                <StackLayout 
-                    Margin="0, 0, 0, 0"
-                    Orientation="Horizontal"
-                    >
-                    <Frame 
-                        Padding="0"
-                        HeightRequest="10"
-                        WidthRequest="20"
-                        BackgroundColor="#60B5F9"
-                        CornerRadius="10"
-                        />
-
-                    
-                </StackLayout>
-
             </ContentView>
 
         </AbsoluteLayout>
