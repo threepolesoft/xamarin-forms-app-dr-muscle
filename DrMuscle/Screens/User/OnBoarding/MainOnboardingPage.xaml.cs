@@ -16,8 +16,7 @@ namespace DrMuscle.Screens.User.OnBoarding
 		public MainOnboardingPage ()
 		{
 			InitializeComponent ();
-
-			Children.Add(new Registration());
+            Children.Add(new Registration());
 		}
 	}
 }
