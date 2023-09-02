@@ -18,5 +18,10 @@ namespace DrMuscle.Screens.User.OnBoarding
 			InitializeComponent ();
             Children.Add(new Registration());
 		}
-	}
+
+        private async void btn_create_account_Clicked(object sender, EventArgs e)
+        {
+			await Navigation.PushModalAsync(new Registration());
+        }
+    }
 }

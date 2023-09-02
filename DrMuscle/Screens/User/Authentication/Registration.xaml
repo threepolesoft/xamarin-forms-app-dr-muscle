@@ -41,6 +41,7 @@
                         >
 
                     <StackLayout 
+                        IsVisible="false"
                             Margin="0, 20, 0, 0"
                             Orientation="Horizontal"
                             HorizontalOptions="FillAndExpand"
@@ -69,7 +70,7 @@
 
                 <StackLayout
                     HorizontalOptions="CenterAndExpand"
-                    Margin="0, 15, 0, 0"
+                    Margin="0, 45, 0, 0"
                     >
 
                     <StackLayout
@@ -688,6 +689,8 @@
                         </Label.GestureRecognizers>
                     </Label>
                 </StackLayout>
+
+                <BoxView HeightRequest="45"/>
 
             </StackLayout>
         </ScrollView>

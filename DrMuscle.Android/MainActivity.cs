@@ -20,14 +20,24 @@ namespace DrMuscle.Droid
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
 
             var uiOptions =
-                  SystemUiFlags.HideNavigation |
-                  SystemUiFlags.LayoutHideNavigation |
                   SystemUiFlags.LayoutFullscreen |
-                  SystemUiFlags.Fullscreen |
                   SystemUiFlags.LayoutStable |
                   SystemUiFlags.ImmersiveSticky;
 
             Window.DecorView.SystemUiVisibility = (StatusBarVisibility)uiOptions;
+
+            if (Build.VERSION.SdkInt >= BuildVersionCodes.Kitkat)
+            {
+                // for covering the full screen in android..
+                Window.SetFlags(WindowManagerFlags.LayoutNoLimits, WindowManagerFlags.LayoutNoLimits);
+
+                // clear FLAG_TRANSLUCENT_STATUS flag:
+                Window.ClearFlags(WindowManagerFlags.TranslucentStatus);
+
+                Window.SetStatusBarColor(Android.Graphics.Color.Transparent);
+
+            }
+
 
             LoadApplication(new App());
         }
