@@ -40,38 +40,7 @@
 
                 <StackLayout>
                     
-                    <StackLayout
-                        IsVisible="false"
-                        Orientation="Vertical"
-                        HorizontalOptions="CenterAndExpand"
-                        >
 
-                        <StackLayout 
-                            Margin="0, 20, 0, 0"
-                            Orientation="Horizontal"
-                            HorizontalOptions="FillAndExpand"
-                            >
-
-                            <Frame 
-                                Padding="0"
-                                HeightRequest="10"
-                                WidthRequest="10"
-                                BackgroundColor="#60B5F9"
-                                CornerRadius="10"
-                                />
-
-                            <Frame 
-                                Padding="0"
-                                HeightRequest="10"
-                                WidthRequest="10"
-                                BackgroundColor="#f2f2f2"
-                                CornerRadius="10"
-                                />
-
-
-                        </StackLayout>
-
-                    </StackLayout>
 
                     <StackLayout
                     HorizontalOptions="CenterAndExpand"
@@ -101,49 +70,24 @@
                         <Label 
                             Text="Join free"
                             TextColor="Wheat"
-                            FontSize="24"
+                            FontSize="28"
                             Margin="30,30,0,0"
+                            TextTransform="Uppercase"
                             />
-                    
+
                         <Label 
                             Text="Save your workouts,
                             progress, and stats"
                             TextColor="Wheat"
-                            FontSize="24"
-                            Margin="30,15,0,0"
+                            FontSize="26"
+                            Margin="30,25,0,0"
                             />
 
-                        <Label 
-                            Text="Join free with Google"
-                            TextColor="Wheat"
-                            FontSize="18"
-                            Margin="30,10,0,0"
-                            />
-
-                        <Label 
-                            Text="Join free with Facebook"
-                            TextColor="Wheat"
-                            FontSize="18"
-                            Margin="30,0,0,0"
-                            />
-
-                        <Label 
-                            Text="Join free with Email"
-                            TextColor="Wheat"
-                            FontSize="18"
-                            Margin="30,0,0,0"
-                            />
-                        
-                        <Label 
-                            Text="Join free with Apple"
-                            TextColor="Wheat"
-                            FontSize="18"
-                            Margin="30,0,0,0"
-                            />
 
                     </StackLayout>
                     
                 </StackLayout>
+                
             </ContentView>
 
             <ContentView 
@@ -155,23 +99,49 @@
 
                 <StackLayout 
                     VerticalOptions="End" 
-                    Margin="20, 0, 20, 50"
+                    Margin="35, 0, 35, 70"
                     >
 
-                    <StackLayout>
-
-
-                    </StackLayout>
-
                     <Button
-                        x:Name="btn_create_account"
-                        Clicked="btn_create_account_Clicked"
                         Margin="0, 0, 0, 0"
                         HorizontalOptions="FillAndExpand"
                         HeightRequest="35"
                         CornerRadius="5"
-                        Text="Create Account"
-                        FontSize="14"
+                        Text="Join free with Google"
+                        FontSize="16"
+                        TextTransform="Uppercase"
+                        BackgroundColor="#60B5F9"
+                        />
+
+                    <Button
+                        Margin="0, 0, 0, 0"
+                        HorizontalOptions="FillAndExpand"
+                        HeightRequest="35"
+                        CornerRadius="5"
+                        Text="Join free with Facebook"
+                        FontSize="16"
+                        TextTransform="Uppercase"
+                        BackgroundColor="#60B5F9"
+                        />
+                    
+                    <Button
+                        Margin="0, 0, 0, 0"
+                        HorizontalOptions="FillAndExpand"
+                        HeightRequest="35"
+                        CornerRadius="5"
+                        Text="Join free with Email"
+                        FontSize="16"
+                        TextTransform="Uppercase"
+                        BackgroundColor="#60B5F9"
+                        />       
+                    
+                    <Button
+                        Margin="0, 0, 0, 0"
+                        HorizontalOptions="FillAndExpand"
+                        HeightRequest="35"
+                        CornerRadius="5"
+                        Text="Join free with Apple"
+                        FontSize="16"
                         TextTransform="Uppercase"
                         BackgroundColor="#60B5F9"
                         />
